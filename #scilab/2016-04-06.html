@@ -86,5 +86,57 @@
 <br />
 <a href="#10:42:16" name="10:42:16" class="time">[10:42:16]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
 <br />
+<a href="#11:38:05" name="11:38:05" class="time">[11:38:05]</a> -!- <span class="quit">Rish</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#11:53:32" name="11:53:32" class="time">[11:53:32]</a> -!- <span class="join">paro</span> [paro!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#11:53:33" name="11:53:33" class="time">[11:53:33]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#15:34:05" name="15:34:05" class="time">[15:34:05]</a> -!- <span class="join">Rish</span> [Rish!~quassel@43.242.118.174] has joined #scilab
+<br />
+<a href="#15:36:48" name="15:36:48" class="time">[15:36:48]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: thankyou for reviewing, I will remove the unit test...for the tooltip I mailed you the use of this tooltip facility...In case when data value is larger than cell size then the tooltip will show the complete data value without actually scrolling the data in the cell
+<br />
+<a href="#15:36:52" name="15:36:52" class="time">[15:36:52]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> isnt that helpful?
+<br />
+<a href="#15:38:00" name="15:38:00" class="time">[15:38:00]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> letting the user decide what will be in the tooltip could be phase 2 
+<br />
+<a href="#15:38:53" name="15:38:53" class="time">[15:38:53]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#16:25:43" name="16:25:43" class="time">[16:25:43]</a> -!- <span class="quit">Rish</span> has quit [Remote host closed the connection]
+<br />
+<a href="#16:31:28" name="16:31:28" class="time">[16:31:28]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> davidcl, hi
+<br />
+<a href="#16:31:32" name="16:31:32" class="time">[16:31:32]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> in this <a href="https://codereview.scilab.org/#/c/18025/6/scilab/modules/localization/sci_gateway/cpp/sci_setlanguage.cpp" target="_blank">https://codereview.scilab.org</a>
+<br />
+<a href="#16:31:50" name="16:31:50" class="time">[16:31:50]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> is it dead code or should it be || instead of &amp;&amp;
+<br />
+<a href="#16:50:09" name="16:50:09" class="time">[16:50:09]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I guess that it might be semi dead code
+<br />
+<a href="#16:50:30" name="16:50:30" class="time">[16:50:30]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> you have to check the argument validity first using isLanguageOK
+<br />
+<a href="#16:50:53" name="16:50:53" class="time">[16:50:53]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> and the convert it and check that is successfully converted
+<br />
+<a href="#16:51:26" name="16:51:26" class="time">[16:51:26]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> so in my view you have to convert that into 2 distinct condition
+<br />
+<a href="#16:51:41" name="16:51:41" class="time">[16:51:41]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> and please please please ; split this commit into multiple ones
+<br />
+<a href="#16:52:00" name="16:52:00" class="time">[16:52:00]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> having simple commit ease testing and review
+<br />
+<a href="#16:52:00" name="16:52:00" class="time">[16:52:00]</a> -!- <span class="join">kartik</span> [kartik!~kartik@14.139.82.6] has joined #scilab
+<br />
+<a href="#16:52:18" name="16:52:18" class="time">[16:52:18]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> (and also ease non regression checks)
+<br />
+<a href="#16:52:27" name="16:52:27" class="time">[16:52:27]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#17:11:50" name="17:11:50" class="time">[17:11:50]</a> -!- <span class="join">manubis</span> [manubis!~manubis@im.apinc.org] has joined #scilab
+<br />
+<a href="#18:11:58" name="18:11:58" class="time">[18:11:58]</a> -!- <span class="join">iaashish7</span> [iaashish7!~iaashish7@123.201.110.122] has joined #scilab
+<br />
+<a href="#18:16:39" name="18:16:39" class="time">[18:16:39]</a> -!- <span class="quit">kartik</span> has quit [Quit: Leaving]
+<br />
+<a href="#19:34:45" name="19:34:45" class="time">[19:34:45]</a> -!- <span class="join">cardinot</span> [cardinot!~cardinot@92.235.43.69] has joined #scilab
+<br />
+<a href="#19:35:04" name="19:35:04" class="time">[19:35:04]</a> -!- <span class="quit">iaashish7</span> has quit [Ping timeout: 480 seconds]
+<br />
 </body>
 </html>
