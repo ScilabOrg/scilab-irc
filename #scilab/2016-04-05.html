@@ -64,5 +64,69 @@
 <br />
 <a href="#10:36:21" name="10:36:21" class="time">[10:36:21]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
 <br />
+<a href="#11:29:37" name="11:29:37" class="time">[11:29:37]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: Hi: thankyou for reveiwing :..regarding your 4th comment, I couldnt understnd it completly but do you want to know the reason of implemnting ScilabTableModel instead of directly using DefaulrTableModel?
+<br />
+<a href="#11:40:56" name="11:40:56" class="time">[11:40:56]</a> -!- <span class="join">sampig</span> [sampig!~sampig@wlanstud0808.wlan.tu-clausthal.de] has joined #scilab
+<br />
+<a href="#11:41:27" name="11:41:27" class="time">[11:41:27]</a> -!- <span class="quit">sampig</span> has quit [Remote host closed the connection]
+<br />
+<a href="#11:43:39" name="11:43:39" class="time">[11:43:39]</a> -!- <span class="join">sampig</span> [sampig!~sampig@wlanstud0808.wlan.tu-clausthal.de] has joined #scilab
+<br />
+<a href="#11:44:45" name="11:44:45" class="time">[11:44:45]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> I have implemented ScilabTableModel because it in future I can use it to incorporate new feature such as disabling particular cells in table and to accept integers as integers and not as strings(in present table each alue is considered as string)
+<br />
+<a href="#11:44:58" name="11:44:58" class="time">[11:44:58]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> etc.
+<br />
+<a href="#11:45:43" name="11:45:43" class="time">[11:45:43]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> In case its inappropriate to implement now I could comment it or remove it comepletly
+<br />
+<a href="#11:50:19" name="11:50:19" class="time">[11:50:19]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hmm ok Rish ; that's totally acceptable to use a java ScilabTableModel
+<br />
+<a href="#11:50:49" name="11:50:49" class="time">[11:50:49]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> but I want to be sure that you know that duplicating data might lead to memory issues
+<br />
+<a href="#11:51:02" name="11:51:02" class="time">[11:51:02]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> (especially on the Java side)
+<br />
+<a href="#11:54:23" name="11:54:23" class="time">[11:54:23]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> ok..I understand but I wont duplicate it unnecessarily
+<br />
+<a href="#11:54:51" name="11:54:51" class="time">[11:54:51]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: I will make the changes as per your comments
+<br />
+<a href="#11:55:20" name="11:55:20" class="time">[11:55:20]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> were the features and implementation upto expectation?
+<br />
+<a href="#12:31:46" name="12:31:46" class="time">[12:31:46]</a> -!- <span class="join">iaashish7</span> [iaashish7!~iaashish7@123.201.110.122] has joined #scilab
+<br />
+<a href="#12:36:53" name="12:36:53" class="time">[12:36:53]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I did not checked yet
+<br />
+<a href="#12:40:19" name="12:40:19" class="time">[12:40:19]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+<a href="#12:40:36" name="12:40:36" class="time">[12:40:36]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: I have made the changes and pushed it,  :)
+<br />
+<a href="#12:43:33" name="12:43:33" class="time">[12:43:33]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> I read the details regarding the commit message, I have shortened the message but didnt add feature details 
+<br />
+<a href="#14:02:04" name="14:02:04" class="time">[14:02:04]</a> -!- <span class="quit">iaashish7</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#14:18:43" name="14:18:43" class="time">[14:18:43]</a> -!- <span class="join">Rish_</span> [Rish_!~quassel@163.53.179.205] has joined #scilab
+<br />
+<a href="#14:18:43" name="14:18:43" class="time">[14:18:43]</a> -!- <span class="quit">Rish</span> has quit [Read error: Connection reset by peer]
+<br />
+<a href="#15:27:26" name="15:27:26" class="time">[15:27:26]</a> -!- <span class="quit">Rish_</span> has quit [Remote host closed the connection]
+<br />
+<a href="#17:33:10" name="17:33:10" class="time">[17:33:10]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#17:39:01" name="17:39:01" class="time">[17:39:01]</a> -!- <span class="quit">kartik</span> has quit [Remote host closed the connection]
+<br />
+<a href="#17:48:14" name="17:48:14" class="time">[17:48:14]</a> -!- <span class="join">manubis</span> [manubis!~manubis@im.apinc.org] has joined #scilab
+<br />
+<a href="#18:07:02" name="18:07:02" class="time">[18:07:02]</a> -!- <span class="join">ggoncalves</span> [ggoncalves!~guilherme@177.54.122.225] has joined #scilab
+<br />
+<a href="#18:40:19" name="18:40:19" class="time">[18:40:19]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
+<a href="#18:40:52" name="18:40:52" class="time">[18:40:52]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#18:56:47" name="18:56:47" class="time">[18:56:47]</a> -!- <span class="part">manubis</span> [manubis!~manubis@im.apinc.org] has parted #scilab
+<br />
+<a href="#18:57:09" name="18:57:09" class="time">[18:57:09]</a> -!- <span class="join">manubis</span> [manubis!~manubis@im.apinc.org] has joined #scilab
+<br />
+<a href="#21:45:18" name="21:45:18" class="time">[21:45:18]</a> -!- <span class="part">manubis</span> [manubis!~manubis@im.apinc.org] has parted #scilab
+<br />
+<a href="#22:37:14" name="22:37:14" class="time">[22:37:14]</a> -!- <span class="quit">ggoncalves</span> has quit [Ping timeout: 480 seconds]
+<br />
 </body>
 </html>
