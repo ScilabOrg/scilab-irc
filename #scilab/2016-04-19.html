@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-04-19</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-04-19</h1>
+  <a href=".">Back</a><br />
+<a href="#01:32:11" name="01:32:11" class="time">[01:32:11]</a> -!- <span class="quit">cardinot</span> has quit [Quit: cardinot]
+<br />
+<a href="#05:15:40" name="05:15:40" class="time">[05:15:40]</a> -!- <span class="join">ElcidChawa</span> [ElcidChawa!~androirc@41.202.219.64] has joined #scilab
+<br />
+<a href="#05:16:49" name="05:16:49" class="time">[05:16:49]</a> <span class="person" style="color:#5b257d">&lt;ElcidChawa&gt;</span> Wish to know more insight on the scilab software contribution
+<br />
+<a href="#05:28:37" name="05:28:37" class="time">[05:28:37]</a> -!- <span class="quit">darock</span> has quit [Remote host closed the connection]
+<br />
+<a href="#05:28:51" name="05:28:51" class="time">[05:28:51]</a> -!- <span class="join">darock</span> [darock!~Thunderbi@mail.unitedinsong.com.au] has joined #scilab
+<br />
+<a href="#05:41:08" name="05:41:08" class="time">[05:41:08]</a> -!- <span class="quit">ElcidChawa</span> has quit [Read error: Connection reset by peer]
+<br />
+<a href="#06:00:04" name="06:00:04" class="time">[06:00:04]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-200-106.w2-11.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#06:37:36" name="06:37:36" class="time">[06:37:36]</a> -!- <span class="join">paro</span> [paro!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#06:37:36" name="06:37:36" class="time">[06:37:36]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#07:03:52" name="07:03:52" class="time">[07:03:52]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> hi davidcl 
+<br />
+<a href="#07:04:01" name="07:04:01" class="time">[07:04:01]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> &lt;davidcl&gt; flook, you might be able to delete it on the caller without using API scilab at all
+<br />
+<a href="#07:04:07" name="07:04:07" class="time">[07:04:07]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> I didn't get this.
+<br />
+<a href="#07:05:37" name="07:05:37" class="time">[07:05:37]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hi flook ; hi everyone
+<br />
+<a href="#07:05:45" name="07:05:45" class="time">[07:05:45]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> you already done that :)
+<br />
+<a href="#07:06:03" name="07:06:03" class="time">[07:06:03]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> by looping on the values and delete[] them
+<br />
+<a href="#07:06:17" name="07:06:17" class="time">[07:06:17]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> no
+<br />
+<a href="#07:06:18" name="07:06:18" class="time">[07:06:18]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> (on the caller)
+<br />
+<a href="#07:06:36" name="07:06:36" class="time">[07:06:36]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> but caller is a C file
+<br />
+<a href="#07:06:37" name="07:06:37" class="time">[07:06:37]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> <a href="https://codereview.scilab.org/#/c/18063/6/scilab/modules/gui/sci_gateway/cpp/sci_getinstalledlookandfeels.cpp" target="_blank">https://codereview.scilab.org</a>
+<br />
+<a href="#07:06:43" name="07:06:43" class="time">[07:06:43]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> no ?
+<br />
+<a href="#07:06:44" name="07:06:44" class="time">[07:06:44]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> and we can't call delete
+<br />
+<a href="#07:06:55" name="07:06:55" class="time">[07:06:55]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> not this one
+<br />
+<a href="#07:06:59" name="07:06:59" class="time">[07:06:59]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I may hav miss something :/
+<br />
+<a href="#07:09:21" name="07:09:21" class="time">[07:09:21]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> which one ?
+<br />
+<a href="#07:09:48" name="07:09:48" class="time">[07:09:48]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> link to the issue <a href="https://scan6.coverity.com/reports.htm#v37538/p10612/fileInstanceId=41865072&amp;defectInstanceId=13635467&amp;mergedDefectId=550618" target="_blank">https://scan6.coverity.com</a>
+<br />
+<a href="#07:10:46" name="07:10:46" class="time">[07:10:46]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> link to the previous commit <a href="https://codereview.scilab.org/#/c/17983/7/scilab/modules/api_scilab/src/cpp/api_stack_string.cpp" target="_blank">https://codereview.scilab.org</a>
+<br />
+<a href="#07:10:53" name="07:10:53" class="time">[07:10:53]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> I removed the changes from that commit
+<br />
+<a href="#07:12:03" name="07:12:03" class="time">[07:12:03]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> selectedFontName is allocated memory by getFontChooserFontName in gui/src/jni/CallScilabBridge.cpp
+<br />
+<a href="#07:12:09" name="07:12:09" class="time">[07:12:09]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> which is generated by giws
+<br />
+<a href="#07:12:29" name="07:12:29" class="time">[07:12:29]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> so we can not have a malloc there instead of new
+<br />
+<a href="#07:15:57" name="07:15:57" class="time">[07:15:57]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> davidcl, ?
+<br />
+<a href="#07:16:48" name="07:16:48" class="time">[07:16:48]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> did you try translating sci_uigetfont to C++ ?
+<br />
+<a href="#07:18:24" name="07:18:24" class="time">[07:18:24]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> should I convert the whole C file to cpp?
+<br />
+<a href="#07:20:38" name="07:20:38" class="time">[07:20:38]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep
+<br />
+<a href="#07:20:45" name="07:20:45" class="time">[07:20:45]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> this might be the solution
+<br />
+<a href="#07:23:38" name="07:23:38" class="time">[07:23:38]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> ok I'll try
+<br />
+</body>
+</html>
