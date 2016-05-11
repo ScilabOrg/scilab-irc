@@ -76,5 +76,59 @@
 <br />
 <a href="#13:04:29" name="13:04:29" class="time">[13:04:29]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> i have kept the frequeny very less . still i have the same problem
 <br />
+<a href="#13:31:43" name="13:31:43" class="time">[13:31:43]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> I can't help you without more info about your code sorry
+<br />
+<a href="#13:32:21" name="13:32:21" class="time">[13:32:21]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> how to run my xcos model for only a particular period of time in simulation 
+<br />
+<a href="#13:33:19" name="13:33:19" class="time">[13:33:19]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> i could't share my code in this online chat. how to do it
+<br />
+<a href="#13:39:05" name="13:39:05" class="time">[13:39:05]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> you can change the total simulation time in the parameters
+<br />
+<a href="#13:39:28" name="13:39:28" class="time">[13:39:28]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> simulation &gt; configure
+<br />
+<a href="#13:39:55" name="13:39:55" class="time">[13:39:55]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> or you can add an END block and modify the time there
+<br />
+<a href="#13:41:00" name="13:41:00" class="time">[13:41:00]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> o´k thanks
+<br />
+<a href="#13:41:30" name="13:41:30" class="time">[13:41:30]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> while i was using the workspace block inn xcos, i had some problems
+<br />
+<a href="#13:41:56" name="13:41:56" class="time">[13:41:56]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> is there any alternative for this type of block
+<br />
+<a href="#13:47:59" name="13:47:59" class="time">[13:47:59]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> to and from workspace let you export or import data from scilab
+<br />
+<a href="#13:49:05" name="13:49:05" class="time">[13:49:05]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> how to provide a feedback to a block in xcos
+<br />
+<a href="#13:51:11" name="13:51:11" class="time">[13:51:11]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> you link its output to its input (generally)
+<br />
+<a href="#13:54:45" name="13:54:45" class="time">[13:54:45]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> but if i do so i get an error 'control port must be connected to command prompt'
+<br />
+<a href="#13:59:13" name="13:59:13" class="time">[13:59:13]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> you link its data output to its data input (not events)
+<br />
+<a href="#13:59:32" name="13:59:32" class="time">[13:59:32]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> and you might have events port not connected in your diagram
+<br />
+<a href="#14:00:20" name="14:00:20" class="time">[14:00:20]</a> <span class="person" style="color:#9c2f92">&lt;meme&gt;</span> last thing to make sure is that you are not in algebraic loop (an initial input or output must exist for a feedback to be resolved)
+<br />
+<a href="#15:12:53" name="15:12:53" class="time">[15:12:53]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+<a href="#15:32:36" name="15:32:36" class="time">[15:32:36]</a> -!- <span class="quit">Vj</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#15:43:26" name="15:43:26" class="time">[15:43:26]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#16:15:54" name="16:15:54" class="time">[16:15:54]</a> -!- <span class="join">sampig</span> [sampig!~sampig@x4db1db70.dyn.telefonica.de] has joined #scilab
+<br />
+<a href="#17:20:31" name="17:20:31" class="time">[17:20:31]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#17:44:24" name="17:44:24" class="time">[17:44:24]</a> -!- <span class="quit">davidcl</span> has quit [Remote host closed the connection]
+<br />
+<a href="#17:58:51" name="17:58:51" class="time">[17:58:51]</a> -!- <span class="join">manubis</span> [manubis!~manubis@im.apinc.org] has joined #scilab
+<br />
+<a href="#18:34:10" name="18:34:10" class="time">[18:34:10]</a> -!- <span class="part">manubis</span> [manubis!~manubis@im.apinc.org] has parted #scilab
+<br />
+<a href="#18:35:02" name="18:35:02" class="time">[18:35:02]</a> -!- <span class="join">manubis</span> [manubis!~manubis@im.apinc.org] has joined #scilab
+<br />
+<a href="#19:19:53" name="19:19:53" class="time">[19:19:53]</a> -!- <span class="quit">mase-tech</span> has quit [Quit: Leaving]
+<br />
+<a href="#19:58:12" name="19:58:12" class="time">[19:58:12]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
 </body>
 </html>
