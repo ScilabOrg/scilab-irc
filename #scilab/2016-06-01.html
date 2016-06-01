@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-06-01</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-06-01</h1>
+  <a href=".">Back</a><br />
+<a href="#06:17:00" name="06:17:00" class="time">[06:17:00]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-185-197.w92-139.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#07:06:49" name="07:06:49" class="time">[07:06:49]</a> -!- <span class="join">Rish</span> [Rish!~quassel@43.250.157.46] has joined #scilab
+<br />
+<a href="#07:09:22" name="07:09:22" class="time">[07:09:22]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: Hi :)
+<br />
+<a href="#07:13:35" name="07:13:35" class="time">[07:13:35]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hi RIsh, hi everyone
+<br />
+<a href="#07:47:35" name="07:47:35" class="time">[07:47:35]</a> -!- <span class="join">Rish_</span> [Rish_!~quassel@43.250.157.31] has joined #scilab
+<br />
+<a href="#07:54:10" name="07:54:10" class="time">[07:54:10]</a> -!- <span class="quit">Rish</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#08:00:24" name="08:00:24" class="time">[08:00:24]</a> -!- <span class="quit">Rish_</span> has quit [Remote host closed the connection]
+<br />
+<a href="#08:22:46" name="08:22:46" class="time">[08:22:46]</a> -!- <span class="quit">flook</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#08:29:48" name="08:29:48" class="time">[08:29:48]</a> <span class="person" style="color:#e523c9">&lt;darock&gt;</span> any clues on how to adjust polarplot lines?
+<br />
+<a href="#08:30:17" name="08:30:17" class="time">[08:30:17]</a> <span class="person" style="color:#e523c9">&lt;darock&gt;</span> from what I see I can only use style=&lt;i&gt;
+<br />
+<a href="#08:41:19" name="08:41:19" class="time">[08:41:19]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#08:45:50" name="08:45:50" class="time">[08:45:50]</a> <span class="person" style="color:#e523c9">&lt;darock&gt;</span> anyone?
+<br />
+<a href="#09:22:32" name="09:22:32" class="time">[09:22:32]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hmm the polarplot is build on top of plot2d
+<br />
+<a href="#09:23:23" name="09:23:23" class="time">[09:23:23]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I guess that there might be an argument (either style or something else) passed to all plot2d calls
+<br />
+<a href="#09:25:06" name="09:25:06" class="time">[09:25:06]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I checked and YES the style parameter is passed to the plot2d()
+<br />
+<a href="#09:40:24" name="09:40:24" class="time">[09:40:24]</a> -!- <span class="join">sampig</span> [sampig!~sampig@ersc143.goemobile.de] has joined #scilab
+<br />
+<a href="#09:41:12" name="09:41:12" class="time">[09:41:12]</a> -!- <span class="join">Vj</span> [Vj!~oftc-webi@213.95.40.2] has joined #scilab
+<br />
+<a href="#09:42:17" name="09:42:17" class="time">[09:42:17]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> @davidcl: I have two bit values 1 and 0. I need to sue these values to concatenate to get the result 10. How to do this in scilab?????
+<br />
+<a href="#09:43:03" name="09:43:03" class="time">[09:43:03]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> do you want a string representation of bits ? or a double value ?
+<br />
+<a href="#09:43:19" name="09:43:19" class="time">[09:43:19]</a> -!- <span class="quit">sampig</span> has quit []
+<br />
+<a href="#09:43:58" name="09:43:58" class="time">[09:43:58]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> @davidcl : what is string representation and what is double value
+<br />
+<a href="#09:44:21" name="09:44:21" class="time">[09:44:21]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> "10" vs 10.
+<br />
+<a href="#09:44:45" name="09:44:45" class="time">[09:44:45]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> 10 is a string with 2 char '1' and '0' inside
+<br />
+<a href="#09:44:51" name="09:44:51" class="time">[09:44:51]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> i need to get 10
+<br />
+<a href="#09:45:05" name="09:45:05" class="time">[09:45:05]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> without quotes
+<br />
+<a href="#09:45:27" name="09:45:27" class="time">[09:45:27]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> 10. is a double (default scilab value) computed with 1*10+0
+<br />
+<a href="#09:46:26" name="09:46:26" class="time">[09:46:26]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> <a href="https://help.scilab.org/docs/5.5.2/en_US/section_836e7e8398c76d09b7a2c04c0f71eb17.html" target="_blank">https://help.scilab.org</a>
+<br />
+<a href="#09:46:47" name="09:46:47" class="time">[09:46:47]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> @davidcl: I a´sked this as an example. But my real values are like 1 and 0000101. How to concatenate these two valúes????
+<br />
+<a href="#09:47:01" name="09:47:01" class="time">[09:47:01]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> <a href="https://help.scilab.org/docs/5.5.2/en_US/bin2dec.html" target="_blank">https://help.scilab.org</a>
+<br />
+<a href="#09:47:29" name="09:47:29" class="time">[09:47:29]</a> <span class="person" style="color:#db3263">* davidcl is thinking about RTFM</span>
+<br />
+<a href="#09:48:02" name="09:48:02" class="time">[09:48:02]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> did you get it ?
+<br />
+<a href="#09:49:08" name="09:49:08" class="time">[09:49:08]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> Yes i did that too
+<br />
+<a href="#09:52:05" name="09:52:05" class="time">[09:52:05]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> maybe you can pastebin a sample to ease my understanding
+<br />
+<a href="#09:53:49" name="09:53:49" class="time">[09:53:49]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> @davidcl: i have updatede my code in pastebin
+<br />
+<a href="#09:53:58" name="09:53:58" class="time">[09:53:58]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> @davidcl : <a href="http://pastebin.com/YbjBnLtX" target="_blank">http://pastebin.com</a>
+<br />
+<a href="#09:58:14" name="09:58:14" class="time">[09:58:14]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> <a href="http://paste.fedoraproject.org/373273/75074146/" target="_blank">http://paste.fedoraproject.org</a>
+<br />
+<a href="#09:58:20" name="09:58:20" class="time">[09:58:20]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> job done :)
+<br />
+<a href="#09:59:17" name="09:59:17" class="time">[09:59:17]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> [signe dec2bin(abs(y),7)'] will create a string matrix with the first row as a sign bit and the second the unsigned value as binary string
+<br />
+<a href="#09:59:35" name="09:59:35" class="time">[09:59:35]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> s/row/collumn
+<br />
+<a href="#10:00:06" name="10:00:06" class="time">[10:00:06]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> and strcat will concatenate each row with an '' separator
+<br />
+<a href="#10:00:33" name="10:00:33" class="time">[10:00:33]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> so the result is a string collumn vector 
+<br />
+<a href="#10:26:26" name="10:26:26" class="time">[10:26:26]</a> -!- <span class="join">sampig</span> [sampig!~sampig@ersc143.goemobile.de] has joined #scilab
+<br />
+<a href="#10:27:11" name="10:27:11" class="time">[10:27:11]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
+<a href="#10:27:46" name="10:27:46" class="time">[10:27:46]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#10:49:18" name="10:49:18" class="time">[10:49:18]</a> -!- <span class="join">maucar</span> [maucar!~maurizioc@c-24-62-42-67.hsd1.ma.comcast.net] has joined #scilab
+<br />
+<a href="#11:47:49" name="11:47:49" class="time">[11:47:49]</a> -!- <span class="quit">flook</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#11:48:28" name="11:48:28" class="time">[11:48:28]</a> <span class="person" style="color:#d5337a">&lt;Vj&gt;</span> @davidcl: thanks
+<br />
+<a href="#12:17:28" name="12:17:28" class="time">[12:17:28]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#12:26:44" name="12:26:44" class="time">[12:26:44]</a> -!- <span class="join">flook_</span> [flook_!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#14:19:13" name="14:19:13" class="time">[14:19:13]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+<a href="#14:29:38" name="14:29:38" class="time">[14:29:38]</a> -!- <span class="quit">flook_</span> has quit [Remote host closed the connection]
+<br />
+<a href="#15:32:56" name="15:32:56" class="time">[15:32:56]</a> -!- <span class="quit">Vj</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#15:35:05" name="15:35:05" class="time">[15:35:05]</a> -!- <span class="join">Rish</span> [Rish!~quassel@43.250.157.46] has joined #scilab
+<br />
+<a href="#15:56:24" name="15:56:24" class="time">[15:56:24]</a> -!- <span class="quit">Rish</span> has quit [Remote host closed the connection]
+<br />
+<a href="#16:06:33" name="16:06:33" class="time">[16:06:33]</a> -!- <span class="join">mase-tech</span> [mase-tech!~mase-tech@2a02:908:1868:25c0:1138:3499:265a:f356] has joined #scilab
+<br />
+<a href="#16:27:02" name="16:27:02" class="time">[16:27:02]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#16:51:26" name="16:51:26" class="time">[16:51:26]</a> -!- <span class="join">mauricar</span> [mauricar!~maurizioc@c-24-62-42-67.hsd1.ma.comcast.net] has joined #scilab
+<br />
+<a href="#16:58:13" name="16:58:13" class="time">[16:58:13]</a> -!- <span class="quit">maucar</span> has quit [Ping timeout: 480 seconds]
+<br />
+</body>
+</html>
