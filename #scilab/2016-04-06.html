@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-04-06</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-04-06</h1>
+  <a href=".">Back</a><br />
+<a href="#00:44:01" name="00:44:01" class="time">[00:44:01]</a> -!- <span class="join">ggoncalves</span> [ggoncalves!~guilherme@177.54.122.225] has joined #scilab
+<br />
+<a href="#02:56:19" name="02:56:19" class="time">[02:56:19]</a> -!- <span class="quit">ggoncalves</span> has quit [Remote host closed the connection]
+<br />
+<a href="#05:58:36" name="05:58:36" class="time">[05:58:36]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-190-63.w92-139.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#06:33:44" name="06:33:44" class="time">[06:33:44]</a> -!- <span class="join">paro</span> [paro!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#06:33:44" name="06:33:44" class="time">[06:33:44]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#07:49:21" name="07:49:21" class="time">[07:49:21]</a> -!- <span class="join">y023rus</span> [y023rus!~y023rus@46.159.126.69] has joined #scilab
+<br />
+<a href="#07:53:21" name="07:53:21" class="time">[07:53:21]</a> <span class="person" style="color:#e93ee2">&lt;y023rus&gt;</span> Gentelmens, please, can you explain me why scilab give answer -2+3.4i for (-8)^(2/3) instead 4?
+<br />
+<a href="#07:54:17" name="07:54:17" class="time">[07:54:17]</a> -!- <span class="join">denisilie94</span> [denisilie94!~androirc@213.233.85.153] has joined #scilab
+<br />
+<a href="#08:09:19" name="08:09:19" class="time">[08:09:19]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> hi. wolframalpha yields the same result <a href="http://www.wolframalpha.com/input/?i=%28-8%29" target="_blank">http://www.wolframalpha.com</a>^%282%2F3%29
+<br />
+<a href="#08:09:52" name="08:09:52" class="time">[08:09:52]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> scilab is not a formal calculs software, it yields approximate forms
+<br />
+<a href="#08:12:21" name="08:12:21" class="time">[08:12:21]</a> -!- <span class="quit">denisilie94</span> has quit [Remote host closed the connection]
+<br />
+<a href="#08:12:33" name="08:12:33" class="time">[08:12:33]</a> <span class="person" style="color:#e93ee2">&lt;y023rus&gt;</span> hi, maxima/sage give 4. And I can't understand why. 
+<br />
+<a href="#08:12:33" name="08:12:33" class="time">[08:12:33]</a> -!- <span class="join">denisilie94</span> [denisilie94!~androirc@213.233.85.153] has joined #scilab
+<br />
+<a href="#08:14:27" name="08:14:27" class="time">[08:14:27]</a> <span class="person" style="color:#e93ee2">&lt;y023rus&gt;</span> even my ti-89 give 4
+<br />
+<a href="#08:22:22" name="08:22:22" class="time">[08:22:22]</a> <span class="person" style="color:#e93ee2">&lt;y023rus&gt;</span> thanks paro, I saw what you mean
+<br />
+<a href="#08:23:35" name="08:23:35" class="time">[08:23:35]</a> -!- <span class="join">denisilie94_</span> [denisilie94_!~chatzilla@p6.eregie.pub.ro] has joined #scilab
+<br />
+<a href="#08:28:21" name="08:28:21" class="time">[08:28:21]</a> -!- <span class="join">Rish</span> [Rish!~quassel@43.242.118.174] has joined #scilab
+<br />
+<a href="#08:29:51" name="08:29:51" class="time">[08:29:51]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> Hi everyone :)
+<br />
+<a href="#08:30:26" name="08:30:26" class="time">[08:30:26]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: I have made the changes as you suggested :)
+<br />
+<a href="#08:30:39" name="08:30:39" class="time">[08:30:39]</a> -!- <span class="quit">denisilie94</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#08:32:59" name="08:32:59" class="time">[08:32:59]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hi all 
+<br />
+<a href="#08:37:12" name="08:37:12" class="time">[08:37:12]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> making the channel a bit more interactive and lively :)
+<br />
+<a href="#08:54:27" name="08:54:27" class="time">[08:54:27]</a> <span class="person" style="color:#2bb46e">&lt;denisilie94_&gt;</span> hi
+<br />
+<a href="#09:17:50" name="09:17:50" class="time">[09:17:50]</a> -!- <span class="quit">y023rus</span> has quit [Quit: Leaving]
+<br />
+<a href="#10:02:16" name="10:02:16" class="time">[10:02:16]</a> -!- <span class="quit">Rish</span> has quit [Remote host closed the connection]
+<br />
+<a href="#10:36:01" name="10:36:01" class="time">[10:36:01]</a> -!- <span class="join">Rish</span> [Rish!~quassel@43.242.118.174] has joined #scilab
+<br />
+<a href="#10:42:16" name="10:42:16" class="time">[10:42:16]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#11:38:05" name="11:38:05" class="time">[11:38:05]</a> -!- <span class="quit">Rish</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#11:53:32" name="11:53:32" class="time">[11:53:32]</a> -!- <span class="join">paro</span> [paro!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#11:53:33" name="11:53:33" class="time">[11:53:33]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#15:34:05" name="15:34:05" class="time">[15:34:05]</a> -!- <span class="join">Rish</span> [Rish!~quassel@43.242.118.174] has joined #scilab
+<br />
+<a href="#15:36:48" name="15:36:48" class="time">[15:36:48]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: thankyou for reviewing, I will remove the unit test...for the tooltip I mailed you the use of this tooltip facility...In case when data value is larger than cell size then the tooltip will show the complete data value without actually scrolling the data in the cell
+<br />
+<a href="#15:36:52" name="15:36:52" class="time">[15:36:52]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> isnt that helpful?
+<br />
+<a href="#15:38:00" name="15:38:00" class="time">[15:38:00]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> letting the user decide what will be in the tooltip could be phase 2 
+<br />
+<a href="#15:38:53" name="15:38:53" class="time">[15:38:53]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#16:25:43" name="16:25:43" class="time">[16:25:43]</a> -!- <span class="quit">Rish</span> has quit [Remote host closed the connection]
+<br />
+<a href="#16:31:28" name="16:31:28" class="time">[16:31:28]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> davidcl, hi
+<br />
+<a href="#16:31:32" name="16:31:32" class="time">[16:31:32]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> in this <a href="https://codereview.scilab.org/#/c/18025/6/scilab/modules/localization/sci_gateway/cpp/sci_setlanguage.cpp" target="_blank">https://codereview.scilab.org</a>
+<br />
+<a href="#16:31:50" name="16:31:50" class="time">[16:31:50]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> is it dead code or should it be || instead of &amp;&amp;
+<br />
+<a href="#16:50:09" name="16:50:09" class="time">[16:50:09]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I guess that it might be semi dead code
+<br />
+<a href="#16:50:30" name="16:50:30" class="time">[16:50:30]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> you have to check the argument validity first using isLanguageOK
+<br />
+<a href="#16:50:53" name="16:50:53" class="time">[16:50:53]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> and the convert it and check that is successfully converted
+<br />
+<a href="#16:51:26" name="16:51:26" class="time">[16:51:26]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> so in my view you have to convert that into 2 distinct condition
+<br />
+<a href="#16:51:41" name="16:51:41" class="time">[16:51:41]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> and please please please ; split this commit into multiple ones
+<br />
+<a href="#16:52:00" name="16:52:00" class="time">[16:52:00]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> having simple commit ease testing and review
+<br />
+<a href="#16:52:00" name="16:52:00" class="time">[16:52:00]</a> -!- <span class="join">kartik</span> [kartik!~kartik@14.139.82.6] has joined #scilab
+<br />
+<a href="#16:52:18" name="16:52:18" class="time">[16:52:18]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> (and also ease non regression checks)
+<br />
+<a href="#16:52:27" name="16:52:27" class="time">[16:52:27]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#17:11:50" name="17:11:50" class="time">[17:11:50]</a> -!- <span class="join">manubis</span> [manubis!~manubis@im.apinc.org] has joined #scilab
+<br />
+<a href="#18:11:58" name="18:11:58" class="time">[18:11:58]</a> -!- <span class="join">iaashish7</span> [iaashish7!~iaashish7@123.201.110.122] has joined #scilab
+<br />
+<a href="#18:16:39" name="18:16:39" class="time">[18:16:39]</a> -!- <span class="quit">kartik</span> has quit [Quit: Leaving]
+<br />
+<a href="#19:34:45" name="19:34:45" class="time">[19:34:45]</a> -!- <span class="join">cardinot</span> [cardinot!~cardinot@92.235.43.69] has joined #scilab
+<br />
+<a href="#19:35:04" name="19:35:04" class="time">[19:35:04]</a> -!- <span class="quit">iaashish7</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#19:52:15" name="19:52:15" class="time">[19:52:15]</a> -!- <span class="part">manubis</span> [manubis!~manubis@im.apinc.org] has parted #scilab
+<br />
+<a href="#19:52:24" name="19:52:24" class="time">[19:52:24]</a> -!- <span class="join">manubis</span> [manubis!~manubis@im.apinc.org] has joined #scilab
+<br />
+<a href="#20:35:20" name="20:35:20" class="time">[20:35:20]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
+<a href="#20:35:45" name="20:35:45" class="time">[20:35:45]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#21:09:39" name="21:09:39" class="time">[21:09:39]</a> -!- <span class="quit">cardinot</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#21:23:09" name="21:23:09" class="time">[21:23:09]</a> -!- <span class="join">cardinot</span> [cardinot!~cardinot@92.235.43.69] has joined #scilab
+<br />
+<a href="#21:50:13" name="21:50:13" class="time">[21:50:13]</a> -!- <span class="part">manubis</span> [manubis!~manubis@im.apinc.org] has parted #scilab
+<br />
+<a href="#21:50:29" name="21:50:29" class="time">[21:50:29]</a> -!- <span class="quit">cardinot</span> has quit [Quit: cardinot]
+<br />
+<a href="#21:56:44" name="21:56:44" class="time">[21:56:44]</a> -!- <span class="quit">denisilie94_</span> has quit [Quit: ChatZilla 0.9.92 [Firefox 45.0/20160304114926]]
+<br />
+</body>
+</html>

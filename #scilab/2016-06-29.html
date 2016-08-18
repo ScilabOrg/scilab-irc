@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-06-29</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-06-29</h1>
+  <a href=".">Back</a><br />
+<a href="#00:09:37" name="00:09:37" class="time">[00:09:37]</a> -!- <span class="join">stas</span> [stas!~stas@159-120-139-78.kamensktel.ru] has joined #scilab
+<br />
+<a href="#01:51:26" name="01:51:26" class="time">[01:51:26]</a> -!- <span class="quit">stas</span> has quit [Quit: Konversation terminated!]
+<br />
+<a href="#05:58:25" name="05:58:25" class="time">[05:58:25]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-378-250.w90-32.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#06:46:50" name="06:46:50" class="time">[06:46:50]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
+<a href="#06:47:57" name="06:47:57" class="time">[06:47:57]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#08:31:36" name="08:31:36" class="time">[08:31:36]</a> -!- <span class="quit">flook</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#08:37:11" name="08:37:11" class="time">[08:37:11]</a> -!- <span class="join">sampig</span> [sampig!~sampig@ersc141.goemobile.de] has joined #scilab
+<br />
+<a href="#09:13:18" name="09:13:18" class="time">[09:13:18]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#09:49:26" name="09:49:26" class="time">[09:49:26]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+<a href="#10:09:10" name="10:09:10" class="time">[10:09:10]</a> -!- <span class="quit">flook</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#10:12:51" name="10:12:51" class="time">[10:12:51]</a> -!- <span class="join">sampig</span> [sampig!~sampig@ersc141.goemobile.de] has joined #scilab
+<br />
+<a href="#10:37:43" name="10:37:43" class="time">[10:37:43]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#11:47:48" name="11:47:48" class="time">[11:47:48]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+<a href="#12:00:43" name="12:00:43" class="time">[12:00:43]</a> <span class="person" style="color:#5e131c">&lt;doug4&gt;</span> I am working in Octave and trying to make an impulse invariant transform function for Octave. I can't get the same results as Matlab does, so I would like to see the implementation that Scilab has. Could you tell me where to look in scilab's files for this please. 
+<br />
+<a href="#12:14:30" name="12:14:30" class="time">[12:14:30]</a> <span class="person" style="color:#5e131c">&lt;doug4&gt;</span> This is the command that I run to use it in scilab
+<br />
+<a href="#12:14:31" name="12:14:31" class="time">[12:14:31]</a> -!- <span class="join">sampig</span> [sampig!~sampig@x590db374.dyn.telefonica.de] has joined #scilab
+<br />
+<a href="#12:14:31" name="12:14:31" class="time">[12:14:31]</a> <span class="person" style="color:#5e131c">&lt;doug4&gt;</span> plot2d([t',t'],[(csim('impulse',t,tf2ss(h)))',0*t'])
+<br />
+<a href="#12:58:45" name="12:58:45" class="time">[12:58:45]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hello doug4 ; tf2ss() and csim() are implemented in scilab on the cacsd module
+<br />
+<a href="#12:59:28" name="12:59:28" class="time">[12:59:28]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> you can take a look at them on <a href="http://cgit.scilab.org/cgit.cgi/scilab/tree/scilab/modules/cacsd/macros" target="_blank">http://cgit.scilab.org</a>
+<br />
+<a href="#13:00:25" name="13:00:25" class="time">[13:00:25]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> or on Scilab use : --&gt; edit tf2ss
+<br />
+<a href="#13:00:33" name="13:00:33" class="time">[13:00:33]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> or : --&gt; edit csim
+<br />
+<a href="#13:06:41" name="13:06:41" class="time">[13:06:41]</a> -!- <span class="join">stas</span> [stas!~stas@159-120-139-78.kamensktel.ru] has joined #scilab
+<br />
+<a href="#13:18:17" name="13:18:17" class="time">[13:18:17]</a> <span class="person" style="color:#5e131c">&lt;doug4&gt;</span> Thank you davidcl  I will look there.
+<br />
+<a href="#13:31:50" name="13:31:50" class="time">[13:31:50]</a> -!- <span class="join">maucar</span> [maucar!~maurizioc@c-24-62-42-67.hsd1.ma.comcast.net] has joined #scilab
+<br />
+<a href="#14:43:56" name="14:43:56" class="time">[14:43:56]</a> -!- <span class="join">paro</span> [paro!~chatzilla@gob75-h01-31-34-251-133.dsl.sta.abo.bbox.fr] has joined #scilab
+<br />
+<a href="#15:20:42" name="15:20:42" class="time">[15:20:42]</a> -!- <span class="quit">stas</span> has quit [Quit: Konversation terminated!]
+<br />
+<a href="#16:47:20" name="16:47:20" class="time">[16:47:20]</a> -!- <span class="quit">paro</span> has quit [Quit: ChatZilla 0.9.92 [Firefox 47.0/20160604131506]]
+<br />
+<a href="#17:12:44" name="17:12:44" class="time">[17:12:44]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#18:36:25" name="18:36:25" class="time">[18:36:25]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+<a href="#20:12:04" name="20:12:04" class="time">[20:12:04]</a> -!- <span class="quit">maucar</span> has quit [Quit: Leaving]
+<br />
+<a href="#20:40:51" name="20:40:51" class="time">[20:40:51]</a> -!- <span class="quit">smartin_</span> has quit [resistance.oftc.net synthon.oftc.net]
+<br />
+<a href="#20:43:18" name="20:43:18" class="time">[20:43:18]</a> -!- <span class="join">smartin_</span> [smartin_!~smartin@207.ip-37-59-126.eu] has joined #scilab
+<br />
+<a href="#22:45:17" name="22:45:17" class="time">[22:45:17]</a> -!- <span class="join">maucar</span> [maucar!~Maurizio@85.f9.5177.ip4.static.sl-reverse.com] has joined #scilab
+<br />
+<a href="#22:48:18" name="22:48:18" class="time">[22:48:18]</a> -!- <span class="quit">maucar</span> has quit []
+<br />
+<a href="#23:42:30" name="23:42:30" class="time">[23:42:30]</a> -!- <span class="join">stas</span> [stas!~stas@159-120-139-78.kamensktel.ru] has joined #scilab
+<br />
+</body>
+</html>

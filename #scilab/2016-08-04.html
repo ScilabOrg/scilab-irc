@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-08-04</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-08-04</h1>
+  <a href=".">Back</a><br />
+<a href="#00:03:05" name="00:03:05" class="time">[00:03:05]</a> -!- <span class="join">leonardojc</span> [leonardojc!~leonardoj@191.189.122.167] has joined #scilab
+<br />
+<a href="#00:08:09" name="00:08:09" class="time">[00:08:09]</a> -!- <span class="join">stas</span> [stas!~stas@159-120-139-78.kamensktel.ru] has joined #scilab
+<br />
+<a href="#01:46:21" name="01:46:21" class="time">[01:46:21]</a> -!- <span class="quit">stas</span> has quit [Quit: Konversation terminated!]
+<br />
+<a href="#03:00:09" name="03:00:09" class="time">[03:00:09]</a> -!- <span class="quit">leonardojc</span> has quit [Quit: Konversation terminated!]
+<br />
+<a href="#06:25:31" name="06:25:31" class="time">[06:25:31]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-182-231.w92-139.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#06:57:22" name="06:57:22" class="time">[06:57:22]</a> -!- <span class="join">flook</span> [flook!uid150533@id-150533.tooting.irccloud.com] has joined #scilab
+<br />
+<a href="#07:09:35" name="07:09:35" class="time">[07:09:35]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> Hi davidcl 
+<br />
+<a href="#07:09:54" name="07:09:54" class="time">[07:09:54]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hi flook
+<br />
+<a href="#07:10:49" name="07:10:49" class="time">[07:10:49]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> Is there a new module added to Scilab?
+<br />
+<a href="#07:11:16" name="07:11:16" class="time">[07:11:16]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> Coverity defects went up from 200 to 1050
+<br />
+<a href="#07:13:28" name="07:13:28" class="time">[07:13:28]</a> -!- <span class="join">sampig</span> [sampig!~sampig@x590dae06.dyn.telefonica.de] has joined #scilab
+<br />
+<a href="#07:39:45" name="07:39:45" class="time">[07:39:45]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> héhé you got it :)
+<br />
+<a href="#07:39:59" name="07:39:59" class="time">[07:39:59]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I upgraded the coverity scan version to the latest one
+<br />
+<a href="#07:42:05" name="07:42:05" class="time">[07:42:05]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> :)
+<br />
+<a href="#07:46:17" name="07:46:17" class="time">[07:46:17]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> it now also scan the java part but keep focus on ast / core / elementary_functions
+<br />
+<a href="#07:46:34" name="07:46:34" class="time">[07:46:34]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> that the most important parts to have a clean interpreter
+<br />
+<a href="#07:47:53" name="07:47:53" class="time">[07:47:53]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> core and elementary_functions is pretty much done.(1 or 2 left)
+<br />
+<a href="#07:48:05" name="07:48:05" class="time">[07:48:05]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> ast has 15 defects left.
+<br />
+<a href="#07:50:10" name="07:50:10" class="time">[07:50:10]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep but the medium impact defects are still high 
+<br />
+<a href="#07:53:39" name="07:53:39" class="time">[07:53:39]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> now they are even higher.
+<br />
+<a href="#07:54:56" name="07:54:56" class="time">[07:54:56]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep coverity progressed and that's good for us
+<br />
+<a href="#07:55:12" name="07:55:12" class="time">[07:55:12]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> yeah
+<br />
+<a href="#07:55:50" name="07:55:50" class="time">[07:55:50]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> about <a href="https://codereview.scilab.org/#/c/18327" target="_blank">https://codereview.scilab.org</a> did you noted my comment ?
+<br />
+<a href="#07:56:05" name="07:56:05" class="time">[07:56:05]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> I was going to ask you about that?
+<br />
+<a href="#07:56:42" name="07:56:42" class="time">[07:56:42]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> there is 2 info on this patchset
+<br />
+<a href="#07:57:17" name="07:57:17" class="time">[07:57:17]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> should I change swb_index out of the function?
+<br />
+<a href="#07:57:49" name="07:57:49" class="time">[07:57:49]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> 1) I showed you how to shut-up coverity using assert() (tagging the source code is better than tagging in the coverity UI)
+<br />
+<a href="#07:58:22" name="07:58:22" class="time">[07:58:22]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> point noted.
+<br />
+<a href="#07:58:27" name="07:58:27" class="time">[07:58:27]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> 2) the algorithm is a bit broken and rewriting it will help understanding and will pass coverity
+<br />
+<a href="#08:01:21" name="08:01:21" class="time">[08:01:21]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> If I change the functions, I'll have to make changes everywhere that function is called.
+<br />
+<a href="#08:01:27" name="08:01:27" class="time">[08:01:27]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> IMHO you can return swb_index on set_state_fsultra_simple() / advance_state_swb()
+<br />
+<a href="#08:01:50" name="08:01:50" class="time">[08:01:50]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> to clarify that we might reset the index on these functions
+<br />
+<a href="#08:02:39" name="08:02:39" class="time">[08:02:39]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> this will probably shutup coverity on fsultra the swb_index will be both checked and overwritten
+<br />
+<a href="#08:04:35" name="08:04:35" class="time">[08:04:35]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> okay.
+<br />
+<a href="#08:08:00" name="08:08:00" class="time">[08:08:00]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> I think we don't need to return swb_index as it is a global, we can directlty set it to 0.
+<br />
+<a href="#08:08:57" name="08:08:57" class="time">[08:08:57]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep we don't need to but this is help understanding
+<br />
+<a href="#08:09:03" name="08:09:03" class="time">[08:09:03]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> s/is/will
+<br />
+<a href="#08:09:41" name="08:09:41" class="time">[08:09:41]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> also set_state_fsultra_simple is returning an int and we are not checking that.
+<br />
+<a href="#08:21:24" name="08:21:24" class="time">[08:21:24]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> swb_index is not used by the functions.
+<br />
+<a href="#13:12:16" name="13:12:16" class="time">[13:12:16]</a> -!- <span class="join">stas</span> [stas!~stas@159-120-139-78.kamensktel.ru] has joined #scilab
+<br />
+<a href="#13:36:49" name="13:36:49" class="time">[13:36:49]</a> -!- <span class="join">maucar</span> [maucar!~maurizioc@c-24-62-42-67.hsd1.ma.comcast.net] has joined #scilab
+<br />
+<a href="#16:13:18" name="16:13:18" class="time">[16:13:18]</a> -!- <span class="quit">flook</span> has quit [Quit: Connection closed for inactivity]
+<br />
+<a href="#16:25:56" name="16:25:56" class="time">[16:25:56]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#17:27:34" name="17:27:34" class="time">[17:27:34]</a> -!- <span class="quit">stas</span> has quit [Quit: Konversation terminated!]
+<br />
+<a href="#19:46:15" name="19:46:15" class="time">[19:46:15]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+<a href="#20:10:00" name="20:10:00" class="time">[20:10:00]</a> -!- <span class="quit">maucar</span> has quit [Quit: Leaving]
+<br />
+</body>
+</html>

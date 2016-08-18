@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-05-24</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-05-24</h1>
+  <a href=".">Back</a><br />
+<a href="#01:40:30" name="01:40:30" class="time">[01:40:30]</a> -!- <span class="quit">cardinot</span> has quit [Quit: cardinot]
+<br />
+<a href="#06:01:47" name="06:01:47" class="time">[06:01:47]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-228-127.w2-14.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#08:24:39" name="08:24:39" class="time">[08:24:39]</a> -!- <span class="join">sampig</span> [sampig!~sampig@x590c4009.dyn.telefonica.de] has joined #scilab
+<br />
+<a href="#10:19:36" name="10:19:36" class="time">[10:19:36]</a> -!- <span class="join">Rish</span> [Rish!~quassel@163.53.179.65] has joined #scilab
+<br />
+<a href="#10:21:19" name="10:21:19" class="time">[10:21:19]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> Hi :)
+<br />
+<a href="#11:59:47" name="11:59:47" class="time">[11:59:47]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
+<a href="#12:00:31" name="12:00:31" class="time">[12:00:31]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#12:02:08" name="12:02:08" class="time">[12:02:08]</a> -!- <span class="join">maucar</span> [maucar!~maucar@c-24-62-42-67.hsd1.ma.comcast.net] has joined #scilab
+<br />
+<a href="#12:02:48" name="12:02:48" class="time">[12:02:48]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
+<a href="#12:03:22" name="12:03:22" class="time">[12:03:22]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#13:46:14" name="13:46:14" class="time">[13:46:14]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: I have just updated my code to the present master code.. I ran test_run("gui") and I got some fail test, could you confirm this if posible..I would try solving them
+<br />
+<a href="#13:46:59" name="13:46:59" class="time">[13:46:59]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> Hi Rish, yep some tests might fail ; especially on the gui module
+<br />
+<a href="#13:47:22" name="13:47:22" class="time">[13:47:22]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> Ok..I will try and solve it :)
+<br />
+<a href="#13:47:34" name="13:47:34" class="time">[13:47:34]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep but please make them on dedicated commits
+<br />
+<a href="#13:47:55" name="13:47:55" class="time">[13:47:55]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> ya sure..
+<br />
+<a href="#13:48:14" name="13:48:14" class="time">[13:48:14]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> FYI some of them might have been failed by wrong coverity fix
+<br />
+<a href="#13:48:45" name="13:48:45" class="time">[13:48:45]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> Ya I just checked..some failed because the logic memory wasnt handled properly
+<br />
+<a href="#13:48:55" name="13:48:55" class="time">[13:48:55]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> ok great
+<br />
+<a href="#13:49:00" name="13:49:00" class="time">[13:49:00]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> memory*
+<br />
+<a href="#13:49:05" name="13:49:05" class="time">[13:49:05]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> :)
+<br />
+<a href="#14:36:06" name="14:36:06" class="time">[14:36:06]</a> -!- <span class="join">mase-tech</span> [mase-tech!~mase-tech@2a02:908:1868:25c0:3ca7:d77a:2ffd:42c2] has joined #scilab
+<br />
+<a href="#15:21:12" name="15:21:12" class="time">[15:21:12]</a> -!- <span class="join">maurcar</span> [maurcar!~maucar@2601:190:0:3e1d:8cb1:e3ea:68d9:a7fb] has joined #scilab
+<br />
+<a href="#15:24:49" name="15:24:49" class="time">[15:24:49]</a> -!- <span class="quit">maucar</span> has quit [Read error: Connection reset by peer]
+<br />
+<a href="#16:37:45" name="16:37:45" class="time">[16:37:45]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> I take care of all the tests when I do a coverity fix.
+<br />
+<a href="#16:38:03" name="16:38:03" class="time">[16:38:03]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> davidcl, Why was there no Coverity analysis since 13 May?
+<br />
+<a href="#16:47:17" name="16:47:17" class="time">[16:47:17]</a> -!- <span class="join">Rish_</span> [Rish_!~quassel@163.53.179.65] has joined #scilab
+<br />
+<a href="#16:47:18" name="16:47:18" class="time">[16:47:18]</a> -!- <span class="quit">Rish</span> has quit [Read error: Connection reset by peer]
+<br />
+<a href="#17:35:38" name="17:35:38" class="time">[17:35:38]</a> <span class="person" style="color:#e8f61c">&lt;v1z&gt;</span> hi all. on ma marathon to build under OSX el capitan
+<br />
+<a href="#17:44:36" name="17:44:36" class="time">[17:44:36]</a> -!- <span class="join">Rish</span> [Rish!~quassel@163.53.176.104] has joined #scilab
+<br />
+<a href="#17:50:58" name="17:50:58" class="time">[17:50:58]</a> -!- <span class="quit">Rish_</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#17:52:06" name="17:52:06" class="time">[17:52:06]</a> -!- <span class="quit">Rish</span> has quit [Read error: Connection reset by peer]
+<br />
+<a href="#18:10:22" name="18:10:22" class="time">[18:10:22]</a> -!- <span class="quit">v1z</span> has quit [Quit: Leaving...]
+<br />
+<a href="#18:21:16" name="18:21:16" class="time">[18:21:16]</a> -!- <span class="join">Rish</span> [Rish!~quassel@163.53.179.65] has joined #scilab
+<br />
+<a href="#19:03:02" name="19:03:02" class="time">[19:03:02]</a> -!- <span class="join">v1z</span> [v1z!~v1z@177.107.233.46] has joined #scilab
+<br />
+<a href="#19:32:55" name="19:32:55" class="time">[19:32:55]</a> -!- <span class="quit">mase-tech</span> has quit [Quit: Leaving]
+<br />
+<a href="#19:36:15" name="19:36:15" class="time">[19:36:15]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> flook, still there ? The jenkins build machine for coverity was off
+<br />
+<a href="#19:36:36" name="19:36:36" class="time">[19:36:36]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> flook: Hi...so when you ran all the test cases for gui, were they all success
+<br />
+<a href="#19:37:14" name="19:37:14" class="time">[19:37:14]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> there was a lot of scilab zombies process launched by the CI tests and thus no more memory available for a coverity job
+<br />
+<a href="#19:38:03" name="19:38:03" class="time">[19:38:03]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: should I begin commiting to the master branch..or will you provide me a different branch?
+<br />
+<a href="#19:38:07" name="19:38:07" class="time">[19:38:07]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I created a cleanup job to manage that on the linux builders
+<br />
+<a href="#19:38:22" name="19:38:22" class="time">[19:38:22]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> so everything may be fine now (and in any future)
+<br />
+<a href="#19:39:16" name="19:39:16" class="time">[19:39:16]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> Rish, if you are backward compatible from any Scilab user ; go for the master branch
+<br />
+<a href="#19:39:49" name="19:39:49" class="time">[19:39:49]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> If I will remove the row header then I wont be backward compaitable
+<br />
+<a href="#19:39:59" name="19:39:59" class="time">[19:39:59]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> if not then I will create them, but that's a burden to manage
+<br />
+<a href="#19:40:19" name="19:40:19" class="time">[19:40:19]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> also davidcl could you once check test_run("gui","bug_13766") and let me know the result
+<br />
+<a href="#19:41:21" name="19:41:21" class="time">[19:41:21]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> I will check tomorrow :)
+<br />
+<a href="#19:41:33" name="19:41:33" class="time">[19:41:33]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> no problem
+<br />
+<a href="#19:41:36" name="19:41:36" class="time">[19:41:36]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> thanks
+<br />
+<a href="#19:41:40" name="19:41:40" class="time">[19:41:40]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> have a good night
+<br />
+<a href="#19:51:36" name="19:51:36" class="time">[19:51:36]</a> -!- <span class="quit">Rish</span> has quit [Remote host closed the connection]
+<br />
+<a href="#19:55:10" name="19:55:10" class="time">[19:55:10]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> davidcl, hi
+<br />
+<a href="#19:55:15" name="19:55:15" class="time">[19:55:15]</a> <span class="person" style="color:#25ef66">&lt;flook&gt;</span> davidcl, is it on now?
+<br />
+<a href="#19:57:21" name="19:57:21" class="time">[19:57:21]</a> -!- <span class="quit">maurcar</span> has quit [Quit: Leaving]
+<br />
+<a href="#20:21:03" name="20:21:03" class="time">[20:21:03]</a> -!- <span class="join">mase-tech</span> [mase-tech!~mase-tech@2a02:908:1868:25c0:1d31:d11d:e187:c458] has joined #scilab
+<br />
+<a href="#20:54:59" name="20:54:59" class="time">[20:54:59]</a> <span class="person" style="color:#e8f61c">&lt;v1z&gt;</span> managed to get scilab 6 to work on OSX El Capitan :D  will post in bugzilla
+<br />
+<a href="#21:59:52" name="21:59:52" class="time">[21:59:52]</a> -!- <span class="quit">mase-tech</span> has quit [Quit: Leaving]
+<br />
+<a href="#22:47:51" name="22:47:51" class="time">[22:47:51]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+</body>
+</html>

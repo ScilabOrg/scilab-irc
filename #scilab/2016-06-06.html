@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-06-06</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-06-06</h1>
+  <a href=".">Back</a><br />
+<a href="#06:03:37" name="06:03:37" class="time">[06:03:37]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-413-157.w92-135.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#06:33:43" name="06:33:43" class="time">[06:33:43]</a> -!- <span class="quit">davidcl</span> has quit [Remote host closed the connection]
+<br />
+<a href="#06:38:51" name="06:38:51" class="time">[06:38:51]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-413-157.w92-135.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#07:14:26" name="07:14:26" class="time">[07:14:26]</a> -!- <span class="join">paro</span> [paro!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#07:14:26" name="07:14:26" class="time">[07:14:26]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#07:16:49" name="07:16:49" class="time">[07:16:49]</a> -!- <span class="quit">paro</span> has quit [Remote host closed the connection]
+<br />
+<a href="#07:17:52" name="07:17:52" class="time">[07:17:52]</a> -!- <span class="join">paul</span> [paul!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#07:17:52" name="07:17:52" class="time">[07:17:52]</a> <span class="nick">paul</span> is now known as <span class="nick">paro</span>
+<br />
+<a href="#07:17:52" name="07:17:52" class="time">[07:17:52]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#08:06:23" name="08:06:23" class="time">[08:06:23]</a> -!- <span class="join">Rish</span> [Rish!~quassel@122.170.149.21] has joined #scilab
+<br />
+<a href="#08:08:16" name="08:08:16" class="time">[08:08:16]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: Hi :)
+<br />
+<a href="#08:19:20" name="08:19:20" class="time">[08:19:20]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: I hope you had a great weekend, I have made the tooltip functionality as per the discussion in the mail, are there anything you wanted to add?
+<br />
+<a href="#08:19:40" name="08:19:40" class="time">[08:19:40]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hi Rish 
+<br />
+<a href="#08:19:50" name="08:19:50" class="time">[08:19:50]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep great :) and you
+<br />
+<a href="#08:21:03" name="08:21:03" class="time">[08:21:03]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> no that's fine
+<br />
+<a href="#08:21:20" name="08:21:20" class="time">[08:21:20]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> just take care of Samuel's remark :  interpreting symbols as variables should really be abandoned.
+<br />
+<a href="#08:21:50" name="08:21:50" class="time">[08:21:50]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> which means : "a" should not be evaluated to the value of a
+<br />
+<a href="#08:22:24" name="08:22:24" class="time">[08:22:24]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> Oupss which means : DO NOT evaluate "a" to the value of a
+<br />
+<a href="#08:22:31" name="08:22:31" class="time">[08:22:31]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> :)
+<br />
+<a href="#08:26:25" name="08:26:25" class="time">[08:26:25]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> ya cool..I will take care of that, thankyou
+<br />
+<a href="#08:27:06" name="08:27:06" class="time">[08:27:06]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> and also I will make a helper page so that things are clearer, if possible could I commit all those things tomorow?
+<br />
+<a href="#08:31:28" name="08:31:28" class="time">[08:31:28]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep
+<br />
+<a href="#08:50:54" name="08:50:54" class="time">[08:50:54]</a> -!- <span class="quit">flook</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#09:05:55" name="09:05:55" class="time">[09:05:55]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> :)
+<br />
+<a href="#09:05:59" name="09:05:59" class="time">[09:05:59]</a> -!- <span class="quit">Rish</span> has quit [Remote host closed the connection]
+<br />
+<a href="#09:33:09" name="09:33:09" class="time">[09:33:09]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#10:22:34" name="10:22:34" class="time">[10:22:34]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#12:04:25" name="12:04:25" class="time">[12:04:25]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
+<a href="#12:04:48" name="12:04:48" class="time">[12:04:48]</a> -!- <span class="join">flook</span> [flook!~pakhandib@14.139.82.6] has joined #scilab
+<br />
+<a href="#14:24:28" name="14:24:28" class="time">[14:24:28]</a> <span class="topic">ChanServ</span> changed topic of <span class="topic">#scilab</span> to: "Scilab - <a href="http://www.scilab.org" target="_blank">http://www.scilab.org</a> | More information about Scilab: <a href="http://wiki.scilab.org" target="_blank">http://wiki.scilab.org</a> or <a href="http://mailinglists.scilab.org/" target="_blank">http://mailinglists.scilab.org</a> | Please be patient when you ask a question. | Scilab 6.0.0-beta-1 has been released."
+<br />
+<a href="#19:02:20" name="19:02:20" class="time">[19:02:20]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#19:23:45" name="19:23:45" class="time">[19:23:45]</a> -!- <span class="join">manubis</span> [manubis!~manubis@im.apinc.org] has joined #scilab
+<br />
+<a href="#21:26:19" name="21:26:19" class="time">[21:26:19]</a> -!- <span class="part">manubis</span> [manubis!~manubis@im.apinc.org] has parted #scilab
+<br />
+</body>
+</html>

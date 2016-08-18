@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-04-07</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-04-07</h1>
+  <a href=".">Back</a><br />
+<a href="#05:33:31" name="05:33:31" class="time">[05:33:31]</a> -!- <span class="join">iaashish7</span> [iaashish7!~iaashish7@123.201.110.122] has joined #scilab
+<br />
+<a href="#05:55:51" name="05:55:51" class="time">[05:55:51]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-190-63.w92-139.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#06:16:17" name="06:16:17" class="time">[06:16:17]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> hello davidcl :)
+<br />
+<a href="#06:20:15" name="06:20:15" class="time">[06:20:15]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hi everybody ; hi iaashish
+<br />
+<a href="#06:21:09" name="06:21:09" class="time">[06:21:09]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> is it necessary to check the return value of functions like getAllocatedSingleString before using them?
+<br />
+<a href="#06:21:21" name="06:21:21" class="time">[06:21:21]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> it is always needed
+<br />
+<a href="#06:21:32" name="06:21:32" class="time">[06:21:32]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> can you please check this?
+<br />
+<a href="#06:21:41" name="06:21:41" class="time">[06:21:41]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> <a href="https://codereview.scilab.org/#/c/18032/3/scilab/modules/matio/sci_gateway/c/sci_matfile_varwrite.c" target="_blank">https://codereview.scilab.org</a>
+<br />
+<a href="#06:21:58" name="06:21:58" class="time">[06:21:58]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> line 94
+<br />
+<a href="#06:22:51" name="06:22:51" class="time">[06:22:51]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep ; that's totally legal usage
+<br />
+<a href="#06:23:09" name="06:23:09" class="time">[06:23:09]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> one doubt..
+<br />
+<a href="#06:23:17" name="06:23:17" class="time">[06:23:17]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> *but* you forgot a ! or a != NULL
+<br />
+<a href="#06:23:44" name="06:23:44" class="time">[06:23:44]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> you should stop / error if the returned value is NULL
+<br />
+<a href="#06:23:53" name="06:23:53" class="time">[06:23:53]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> and NULL == 0
+<br />
+<a href="#06:24:49" name="06:24:49" class="time">[06:24:49]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> okay..got it
+<br />
+<a href="#06:28:16" name="06:28:16" class="time">[06:28:16]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> added a ! before getAllocatedSingleString
+<br />
+<a href="#06:28:38" name="06:28:38" class="time">[06:28:38]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> == NULL is much more explicit :)
+<br />
+<a href="#06:29:30" name="06:29:30" class="time">[06:29:30]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> and even better NULL ==  getAllocatedSingleString(...) as it will error on the typo = vs ==
+<br />
+<a href="#06:32:10" name="06:32:10" class="time">[06:32:10]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> okay will try to incorporate this wherever possible :)
+<br />
+<a href="#06:41:57" name="06:41:57" class="time">[06:41:57]</a> -!- <span class="join">paro</span> [paro!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#06:41:57" name="06:41:57" class="time">[06:41:57]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#06:57:41" name="06:57:41" class="time">[06:57:41]</a> -!- mode/<span class="mode">#scilab</span> [-o paro] by ChanServ
+<br />
+<a href="#07:03:28" name="07:03:28" class="time">[07:03:28]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> davidcl, getAllocatedSingleString return an integer...is it still okay to compare it with NULL
+<br />
+<a href="#07:04:43" name="07:04:43" class="time">[07:04:43]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hmm so it may probably return a status value ; success or fail
+<br />
+<a href="#07:04:50" name="07:04:50" class="time">[07:04:50]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> just check the failure then
+<br />
+<a href="#07:05:02" name="07:05:02" class="time">[07:05:02]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> okay.
+<br />
+<a href="#07:05:38" name="07:05:38" class="time">[07:05:38]</a> -!- <span class="join">Rish</span> [Rish!~quassel@163.53.179.170] has joined #scilab
+<br />
+<a href="#07:05:39" name="07:05:39" class="time">[07:05:39]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> as paro already reviewed your commit ; ask him for more information
+<br />
+<a href="#07:06:00" name="07:06:00" class="time">[07:06:00]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> different people have different expectations :)
+<br />
+<a href="#07:06:05" name="07:06:05" class="time">[07:06:05]</a> <span class="person" style="color:#8493d5">&lt;iaashish7&gt;</span> already on it :)
+<br />
+<a href="#07:06:37" name="07:06:37" class="time">[07:06:37]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: hi :)
+<br />
+<a href="#07:13:10" name="07:13:10" class="time">[07:13:10]</a> -!- <span class="quit">paro</span> has quit [Quit: Leaving]
+<br />
+<a href="#07:13:17" name="07:13:17" class="time">[07:13:17]</a> -!- <span class="join">paul</span> [paul!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#07:13:17" name="07:13:17" class="time">[07:13:17]</a> <span class="nick">paul</span> is now known as <span class="nick">paro</span>
+<br />
+<a href="#07:13:18" name="07:13:18" class="time">[07:13:18]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#07:15:43" name="07:15:43" class="time">[07:15:43]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> I wanted to discuss regarding the tooltip facility I incorporated in my commit. It will be usefull to show the complete data of cell without actually scrolling the data in cell when in case the data value is larger than cell width
+<br />
+<a href="#07:29:29" name="07:29:29" class="time">[07:29:29]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> hmm in my view the tooltip should provide additionnal information
+<br />
+<a href="#07:29:54" name="07:29:54" class="time">[07:29:54]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> so it as much more value if exposed to the user through uicontrol()
+<br />
+<a href="#07:39:22" name="07:39:22" class="time">[07:39:22]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: ya in future the user could decide what can be displayed in tooltip..but for that I would have to change the present implementation of tooltips on scilab side
+<br />
+<a href="#07:39:41" name="07:39:41" class="time">[07:39:41]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> ok
+<br />
+<a href="#07:39:43" name="07:39:43" class="time">[07:39:43]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> so I thought initially I could just make the changes on java side
+<br />
+<a href="#07:39:51" name="07:39:51" class="time">[07:39:51]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> and make the tooltip a bit useful
+<br />
+<a href="#07:40:02" name="07:40:02" class="time">[07:40:02]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> since this is already provided by java
+<br />
+<a href="#07:40:05" name="07:40:05" class="time">[07:40:05]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> yep thats ok ; ignore my comment on that
+<br />
+<a href="#07:40:18" name="07:40:18" class="time">[07:40:18]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> ok..I will remove the unit test
+<br />
+<a href="#07:40:49" name="07:40:49" class="time">[07:40:49]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> for the rest features I cannot write a unit test since its more of interactive feature
+<br />
+<a href="#07:41:08" name="07:41:08" class="time">[07:41:08]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> would u need any other test?
+<br />
+<a href="#07:44:17" name="07:44:17" class="time">[07:44:17]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: The table.tst doesnot use enable property, which initially didnt do the required job, I moified it to do whats necessary and for that i made the test(uicontrol_table) file
+<br />
+<a href="#07:44:47" name="07:44:47" class="time">[07:44:47]</a> <span class="person" style="color:#db3263">&lt;davidcl&gt;</span> then just append this to the existing test
+<br />
+<a href="#07:44:57" name="07:44:57" class="time">[07:44:57]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> okies.. :)
+<br />
+<a href="#08:06:31" name="08:06:31" class="time">[08:06:31]</a> <span class="person" style="color:#516cf6">&lt;Rish&gt;</span> davidcl: I have done as u suggested...also I have made some changes in table.tst file because I modified the whole table
+<br />
+<a href="#08:23:26" name="08:23:26" class="time">[08:23:26]</a> -!- <span class="join">kartik</span> [kartik!~kartik@14.139.82.6] has joined #scilab
+<br />
+<a href="#08:54:18" name="08:54:18" class="time">[08:54:18]</a> -!- <span class="quit">kartik</span> has quit [Quit: Leaving]
+<br />
+<a href="#09:08:01" name="09:08:01" class="time">[09:08:01]</a> -!- <span class="quit">Rish</span> has quit [Remote host closed the connection]
+<br />
+<a href="#09:31:45" name="09:31:45" class="time">[09:31:45]</a> -!- <span class="join">kartik</span> [kartik!~kartik@14.139.82.6] has joined #scilab
+<br />
+<a href="#10:25:48" name="10:25:48" class="time">[10:25:48]</a> -!- <span class="quit">darock</span> has quit [Remote host closed the connection]
+<br />
+<a href="#10:26:05" name="10:26:05" class="time">[10:26:05]</a> -!- <span class="join">darock</span> [darock!~Thunderbi@mail.unitedinsong.com.au] has joined #scilab
+<br />
+<a href="#10:47:25" name="10:47:25" class="time">[10:47:25]</a> -!- <span class="join">denisilie94</span> [denisilie94!~denisilie@141.85.225.202] has joined #scilab
+<br />
+<a href="#10:52:21" name="10:52:21" class="time">[10:52:21]</a> -!- <span class="quit">iaashish7</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#10:53:41" name="10:53:41" class="time">[10:53:41]</a> -!- <span class="quit">denisilie94</span> has quit [Quit: ChatZilla 0.9.92 [Firefox 45.0/20160304114926]]
+<br />
+<a href="#11:01:05" name="11:01:05" class="time">[11:01:05]</a> -!- <span class="join">iaashish7</span> [iaashish7!~iaashish7@123.201.110.122] has joined #scilab
+<br />
+<a href="#11:03:32" name="11:03:32" class="time">[11:03:32]</a> -!- <span class="quit">iaashish7</span> has quit []
+<br />
+<a href="#11:03:55" name="11:03:55" class="time">[11:03:55]</a> -!- <span class="join">iaashish7</span> [iaashish7!~iaashish7@123.201.110.122] has joined #scilab
+<br />
+<a href="#12:36:06" name="12:36:06" class="time">[12:36:06]</a> -!- <span class="quit">darock</span> has quit [Remote host closed the connection]
+<br />
+<a href="#13:33:56" name="13:33:56" class="time">[13:33:56]</a> -!- <span class="join">denisilie94</span> [denisilie94!~chatzilla@141.85.225.202] has joined #scilab
+<br />
+<a href="#13:39:07" name="13:39:07" class="time">[13:39:07]</a> -!- <span class="join">paul</span> [paul!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#13:39:43" name="13:39:43" class="time">[13:39:43]</a> <span class="nick">paul</span> is now known as <span class="nick">Guest10628</span>
+<br />
+<a href="#13:45:51" name="13:45:51" class="time">[13:45:51]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#13:46:07" name="13:46:07" class="time">[13:46:07]</a> <span class="nick">Guest10628</span> is now known as <span class="nick">paro</span>
+<br />
+<a href="#14:39:27" name="14:39:27" class="time">[14:39:27]</a> -!- <span class="quit">iaashish7</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#14:41:22" name="14:41:22" class="time">[14:41:22]</a> -!- <span class="quit">denisilie94</span> has quit [Quit: ChatZilla 0.9.92 [Firefox 45.0/20160304114926]]
+<br />
+<a href="#15:38:21" name="15:38:21" class="time">[15:38:21]</a> -!- <span class="quit">paro</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#16:59:42" name="16:59:42" class="time">[16:59:42]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#18:33:18" name="18:33:18" class="time">[18:33:18]</a> -!- <span class="quit">kartik</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#20:14:39" name="20:14:39" class="time">[20:14:39]</a> -!- <span class="quit">flook</span> has quit [Remote host closed the connection]
+<br />
+<a href="#21:07:47" name="21:07:47" class="time">[21:07:47]</a> -!- <span class="join">ggoncalves</span> [ggoncalves!~guilherme@177.54.122.225] has joined #scilab
+<br />
+<a href="#22:45:14" name="22:45:14" class="time">[22:45:14]</a> -!- <span class="quit">ggoncalves</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#23:09:12" name="23:09:12" class="time">[23:09:12]</a> -!- <span class="join">ggoncalves</span> [ggoncalves!~guilherme@177.54.122.225] has joined #scilab
+<br />
+<a href="#23:42:04" name="23:42:04" class="time">[23:42:04]</a> -!- <span class="quit">ggoncalves</span> has quit [Ping timeout: 480 seconds]
+<br />
+</body>
+</html>

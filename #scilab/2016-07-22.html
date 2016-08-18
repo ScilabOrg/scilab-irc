@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>#scilab | Logs for 2016-07-22</title>
+    <style type="text/css">
+        body {
+            background-color: #F8F8FF;
+            font-family: Fixed, monospace;
+            font-size: 13px;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        a, .time {
+            color: #525552;
+            text-decoration: none;
+        }
+        a:hover, .time:hover { text-decoration: underline; }
+        .person { color: #DD1144; }
+        .join, .part, .quit, .kick, .mode, .topic, .nick { color: #42558C; }
+        .notice { color: #AE768C; }
+    </style>
+  </head>
+  <body>
+  <a href="https://github.com/ScilabOrg/scilab-irc">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
+
+  <h1>#scilab | Logs for 2016-07-22</h1>
+  <a href=".">Back</a><br />
+<a href="#05:59:58" name="05:59:58" class="time">[05:59:58]</a> -!- <span class="join">davidcl</span> [davidcl!~davidcl@ARennes-656-1-223-155.w2-12.abo.wanadoo.fr] has joined #scilab
+<br />
+<a href="#06:50:51" name="06:50:51" class="time">[06:50:51]</a> -!- <span class="join">paro</span> [paro!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#06:50:51" name="06:50:51" class="time">[06:50:51]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#09:45:29" name="09:45:29" class="time">[09:45:29]</a> -!- <span class="join">sampig</span> [sampig!~sampig@x4db1d40d.dyn.telefonica.de] has joined #scilab
+<br />
+<a href="#11:02:36" name="11:02:36" class="time">[11:02:36]</a> -!- <span class="quit">sampig</span> has quit [Ping timeout: 480 seconds]
+<br />
+<a href="#11:55:27" name="11:55:27" class="time">[11:55:27]</a> -!- <span class="join">sampig</span> [sampig!~sampig@x4db1d40d.dyn.telefonica.de] has joined #scilab
+<br />
+<a href="#12:11:52" name="12:11:52" class="time">[12:11:52]</a> -!- <span class="join">maucar</span> [maucar!~maurizioc@c-24-62-42-67.hsd1.ma.comcast.net] has joined #scilab
+<br />
+<a href="#13:30:12" name="13:30:12" class="time">[13:30:12]</a> -!- <span class="join">sajjad</span> [sajjad!~sajjad@31.58.96.88] has joined #scilab
+<br />
+<a href="#13:34:18" name="13:34:18" class="time">[13:34:18]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> Hello friend, I'm trying to work with "sciDOE" module in 5.5.2 version of scilib, according to it's tutorial i ran these commands but I such errors, can you tell me what's is wrong? error link: <a href="http://pastebin.com/BknhydHP" target="_blank">http://pastebin.com</a>
+<br />
+<a href="#13:35:30" name="13:35:30" class="time">[13:35:30]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> sorry for my typos!
+<br />
+<a href="#13:47:53" name="13:47:53" class="time">[13:47:53]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> hi sajjad
+<br />
+<a href="#13:48:52" name="13:48:52" class="time">[13:48:52]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> before doing the addition instruction, if you enter 'size(y)' and 'size(distfun_normrnd(0,noise,nbexp,1))' you'll see that they have incompatible sizes
+<br />
+<a href="#14:01:08" name="14:01:08" class="time">[14:01:08]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> result of size(y) and 'size(distfun_normrnd(0,noise,nbexp,1))' was "1", is this imcompatible? what's your suggestion?
+<br />
+<a href="#14:01:55" name="14:01:55" class="time">[14:01:55]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> run them as separate instructions
+<br />
+<a href="#14:02:02" name="14:02:02" class="time">[14:02:02]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> --&gt; size(y)
+<br />
+<a href="#14:02:12" name="14:02:12" class="time">[14:02:12]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> --&gt; size(dist...)
+<br />
+<a href="#14:05:43" name="14:05:43" class="time">[14:05:43]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> --&gt;size(y)
+<br />
+<a href="#14:05:44" name="14:05:44" class="time">[14:05:44]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span>  ans  =
+<br />
+<a href="#14:05:46" name="14:05:46" class="time">[14:05:46]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span>  
+<br />
+<a href="#14:05:47" name="14:05:47" class="time">[14:05:47]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span>     9.    1. 
+<br />
+<a href="#14:06:19" name="14:06:19" class="time">[14:06:19]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> also for size(dist..) outpur was similar
+<br />
+<a href="#14:09:10" name="14:09:10" class="time">[14:09:10]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> could you please pastebien the display of both y and dist... ?
+<br />
+<a href="#14:09:44" name="14:09:44" class="time">[14:09:44]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> of course
+<br />
+<a href="#14:17:42" name="14:17:42" class="time">[14:17:42]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span>  <a href="http://pastebin.com/Li42HYz8" target="_blank">http://pastebin.com</a>
+<br />
+<a href="#14:18:55" name="14:18:55" class="time">[14:18:55]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> ok so dist has size 16 rows whereas y has only 9
+<br />
+<a href="#14:19:24" name="14:19:24" class="time">[14:19:24]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> so Scilab cannot add them together
+<br />
+<a href="#14:20:43" name="14:20:43" class="time">[14:20:43]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> i've no idea! I just copy &amp; paste sciDOE's official tutorial
+<br />
+<a href="#14:21:25" name="14:21:25" class="time">[14:21:25]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> where did you find it?
+<br />
+<a href="#14:22:49" name="14:22:49" class="time">[14:22:49]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> after install scidoe module by atom and then `help Scidoe` command 
+<br />
+<a href="#14:27:34" name="14:27:34" class="time">[14:27:34]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> indeed the redefinition of nbexp=size(x,"r") is missing when we reduce the number of experiments to 9. that is a doc issue
+<br />
+<a href="#14:27:58" name="14:27:58" class="time">[14:27:58]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> right after "x = scidoe_ccdesign(2,"center",[1 0])"
+<br />
+<a href="#14:28:29" name="14:28:29" class="time">[14:28:29]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> it is present in the white frame but no in the instruction frame
+<br />
+<a href="#14:28:33" name="14:28:33" class="time">[14:28:33]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> not*
+<br />
+<a href="#14:30:42" name="14:30:42" class="time">[14:30:42]</a> -!- <span class="quit">paro</span> has quit [Quit: Leaving]
+<br />
+<a href="#14:30:48" name="14:30:48" class="time">[14:30:48]</a> -!- <span class="join">paul</span> [paul!~paul@46.218.182.251] has joined #scilab
+<br />
+<a href="#14:30:48" name="14:30:48" class="time">[14:30:48]</a> <span class="nick">paul</span> is now known as <span class="nick">paro</span>
+<br />
+<a href="#14:30:48" name="14:30:48" class="time">[14:30:48]</a> -!- mode/<span class="mode">#scilab</span> [+o paro] by ChanServ
+<br />
+<a href="#14:36:48" name="14:36:48" class="time">[14:36:48]</a> <span class="person" style="color:#ce2458">&lt;sajjad&gt;</span> hmmm, thank you dear paro
+<br />
+<a href="#14:37:09" name="14:37:09" class="time">[14:37:09]</a> <span class="person" style="color:#a7549e">&lt;paro&gt;</span> you're welcome
+<br />
+<a href="#14:38:39" name="14:38:39" class="time">[14:38:39]</a> -!- <span class="quit">sajjad</span> has quit [Quit: Konversation terminated!]
+<br />
+<a href="#14:47:09" name="14:47:09" class="time">[14:47:09]</a> -!- <span class="quit">sampig</span> has quit [Quit: Leaving]
+<br />
+<a href="#15:30:12" name="15:30:12" class="time">[15:30:12]</a> -!- <span class="quit">paro</span> has quit [Remote host closed the connection]
+<br />
+<a href="#16:30:06" name="16:30:06" class="time">[16:30:06]</a> -!- <span class="join">flook</span> [flook!uid150533@id-150533.tooting.irccloud.com] has joined #scilab
+<br />
+<a href="#16:39:09" name="16:39:09" class="time">[16:39:09]</a> -!- <span class="quit">davidcl</span> has quit [Quit: Quitte]
+<br />
+<a href="#20:03:08" name="20:03:08" class="time">[20:03:08]</a> -!- <span class="quit">flook</span> has quit [Quit: Connection closed for inactivity]
+<br />
+<a href="#20:12:56" name="20:12:56" class="time">[20:12:56]</a> -!- <span class="quit">maucar</span> has quit [Quit: Leaving]
+<br />
+</body>
+</html>
